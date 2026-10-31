@@ -192,3 +192,20 @@ html, body {
     margin: 10px;
   }
 }
+
+
+
+.box:has(.card-client) {
+    box-sizing: border-box;
+}
+
+.card-client {
+    box-sizing: border-box;
+    max-width: 378px;
+}
+
+@media (max-width: 480px) {
+    .card-client {
+        max-width: 328px;
+    }
+}
